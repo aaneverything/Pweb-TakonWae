@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        min-height: 100vh;
+      }
+      #profile {
+        display: none;
+      }
+      #profile.aside-visible {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-that via-this to-that">
+    <!-- NAVBAR start -->
+    <div class="navbar-sticky py-5 navbar-glass mx-auto px-36 navbar-center">
+      <div class="pt-1">
+        <span class="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-in to-out h-20 font-mont">TakonWae</span>
+      </div>
+      <div class="navbar-end">
+        <a class="navbar-item" href="#fitur">fitur</a>
+        <div class="avatar avatar-ring avatar-md">
+          <div class="dropdown-container">
+            <div class="dropdown">
+              <label class="btn btn-ghost flex cursor-pointer px-0 hover:bg-inherit" tabindex="0">
+                <img src="" alt="avatar" />
+              </label>
+              <div class="dropdown-menu dropdown-menu-bottom-right">
+                <a class="dropdown-item text-sm">Profil</a>
+                <a tabindex="-1" class="dropdown-item text-sm">Daftar Pertanyaan</a>
+                <a tabindex="-1" class="dropdown-item text-sm">pengaturan akun</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar end -->
+
+    <!-- profile end -->
+
+    <!-- hero section start -->
+    <section id="hero" class="pt-96 mb-60">
+      <div class="container mx-auto mb-auto">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4">
+            <span class="text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-in to-out h-20 font-mont">TakonWae</span>
+            <h2 class="font-medium text-5xl mt-5 font-mont text-white">Kumpulke pertanyaanmu secara anonim</h2>
+            <p class="font-medium mb-10 leading-relaxed text-5xl font-mont text-white">seko sopo wae ra sah isin isin</p>
+
+            <article>
+              <label class="btn btn-primary bg-white text-black font-mont font-semibold" for="modal-1">Login Sek</label>
+
+              <input class="modal-state" id="modal-1" type="checkbox" />
+              <div class="modal">
+                <label class="modal-overlay" for="modal-1"></label>
+                <div class="modal-content flex w-full flex-col gap-5 p-7">
+                  <label for="modal-1" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
+                  <div class="flex flex-col gap-2">
+                    <h2 class="text-center text-2xl font-semibold">Sign In cuy</h2>
+                    <p class="mx-auto max-w-xs text-sm text-content2">Sign in sek nggo akun mu</p>
+                  </div>
+
+                  <section>
+                    <div class="form-group">
+                      <div class="form-field">
+                        <label class="form-label">Email mu </label>
+                        <input placeholder="ketik nang kene" type="email" class="input max-w-full" />
+                      </div>
+
+                      <div class="form-field">
+                        <label class="form-label">
+                          <span>Password</span>
+                        </label>
+                        <div class="form-control">
+                          <input placeholder="ketik nang kene" type="password" class="input max-w-full" />
+                        </div>
+                      </div>
+
+                      <div class="form-field">
+                        <div class="form-control justify-between">
+                          <div>
+                            <input type="checkbox" class="checkbox" />
+                            <a href="#">klik gen eling</a>
+                          </div>
+                          <label class="form-label">
+                            <a class="link link-underline-hover link-primary text-sm">lali password?</a>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="form-field pt-5">
+                        <div class="form-control justify-between">
+                          <button type="button" class="btn btn-primary w-full">Sign in</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divider text-sm">Login nggo sosial media</div>
+
+                    <div class="flex justify-center space-x-4">
+                      <button type="button" aria-label="Log in with Google" class="rounded-sm p-3">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 48 48" enable-background="new 0 0 48 48" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            fill="#FFC107"
+                            d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12
+                                c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24
+                                c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
+                          ></path>
+                          <path
+                            fill="#FF3D00"
+                            d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657
+                                C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
+                          ></path>
+                          <path
+                            fill="#4CAF50"
+                            d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36
+                                c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
+                          ></path>
+                          <path
+                            fill="#1976D2"
+                            d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571
+                                c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
+                          ></path>
+                        </svg>
+                      </button>
+                      <button type="button" aria-label="Log in with Twitter" class="rounded-sm p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="h-5 w-5 fill-primary">
+                          <path
+                            d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765 1.032 1.355-0.813 2.391-2.099 2.885-3.631-1.271 0.74-2.677 1.276-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.625 0-6.563 2.937-6.563 6.557 0 0.521 0.063 1.021 0.172 1.495-5.453-0.255-10.287-2.875-13.52-6.833-0.568 0.964-0.891 2.084-0.891 3.303 0 2.281 1.161 4.281 2.916 5.457-1.073-0.031-2.083-0.328-2.968-0.817v0.079c0 3.181 2.26 5.833 5.26 6.437-0.547 0.145-1.131 0.229-1.724 0.229-0.421 0-0.823-0.041-1.224-0.115 0.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-0.521 0-1.041-0.025-1.563-0.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-0.276 0-0.557-0.021-0.839 1.287-0.917 2.401-2.079 3.281-3.396z"
+                          ></path>
+                        </svg>
+                      </button>
+                      <button type="button" aria-label="Log in with GitHub" class="rounded-sm p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="h-5 w-5 fill-current">
+                          <path
+                            d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="items-center justify-center text-xs dark:text-gray-5 sm:px-6 flex gap-2">
+                      <span>rung ndue akun?</span>
+                      <a rel="noopener noreferrer" for="signup" href="#" class="link link-primary text-xs">Sign up sek</a>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </article>
+            <div class="modal-state container max-w-3xl mx-auto bg-transparent rounded-lg overflow-hidden shadow-lg p-8" id="signup">
+              <div class="mx-auto flex w-full max-w-sm flex-col gap-6">
+                <div class="flex flex-col items-center">
+                  <h1 class="text-3xl font-semibold">Sign In</h1>
+                  <p class="text-sm">Sign in to access your account</p>
+                </div>
+                <div class="form-group">
+                  <div class="form-field">
+                    <label class="form-label">Email address</label>
+
+                    <input placeholder="Type here" type="email" class="input max-w-full" />
+                    <label class="form-label">
+                      <span class="form-label-alt">Please enter a valid email.</span>
+                    </label>
+                  </div>
+                  <div class="form-field">
+                    <label class="form-label">Password</label>
+                    <div class="form-control">
+                      <input placeholder="Type here" type="password" class="input max-w-full" />
+                    </div>
+                  </div>
+                  <div class="form-field">
+                    <div class="form-control justify-between">
+                      <div class="flex gap-2">
+                        <input type="checkbox" class="checkbox" />
+                        <a href="#">Remember me</a>
+                      </div>
+                      <label class="form-label">
+                        <a class="link link-underline-hover link-primary text-sm">Forgot your password?</a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-field pt-5">
+                    <div class="form-control justify-between">
+                      <button type="button" class="btn btn-primary w-full">Sign in</button>
+                    </div>
+                  </div>
+
+                  <div class="form-field">
+                    <div class="form-control justify-center">
+                      <a class="link link-underline-hover link-primary text-sm">Don't have an account yet? Sign up.</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- fitur section start -->
+    <section id="fitur" class="menu py-10 mb-44 pt-36">
+      <h2 class="text-center text-5xl font-bold mb-8 font-mont text-white">Fiture</h2>
+      <p class="text-center text-2xl mb-12 font-mont text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, repellendus numquam quam tempora voluptatum.</p>
+      <div class="container flex flex-row flex-nowrap justify-between mx-auto sm:gap-48">
+        <!-- isi start -->
+        <div class="container bg-gray-900 mx-auto rounded-lg shadow-xl">
+          <div class="items-center text-center p-6 space-y-6">
+            <div class="relative top-0 right-0 w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center gap-11">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-2 w-2">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+            <h1 class="text-3xl text-white font-mont font-bold">Gratis Raono Iklan</h1>
+            <h3 class="text-1xl text-white font-mont font-normal">Tenang wae ora mbayar plus ora ono iklane kok</h3>
+          </div>
+        </div>
+        <div class="container bg-gray-900 mx-auto rounded-lg shadow-xl">
+          <div class="items-center text-center p-6 space-y-6">
+            <div class="relative top-0 right-0 w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-2 w-2">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+            <h1 class="text-3xl text-white font-mont font-bold">Gratis Raono Iklan</h1>
+            <h3 class="text-1xl text-white font-mont font-normal">Tenang wae ora mbayar plus ora ono iklane kok</h3>
+          </div>
+        </div>
+        <div class="container bg-gray-900 mx-auto rounded-lg shadow-xl">
+          <div class="items-center text-center p-6 space-y-6">
+            <div class="relative top-0 right-0 w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-2 w-2">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+            <h1 class="text-3xl text-white font-mont font-bold">Gratis Raono Iklan</h1>
+            <h3 class="text-1xl text-white font-mont font-normal">Tenang wae ora mbayar plus ora ono iklane kok</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fitur section end -->
+
+    <!-- kode section start -->
+    <section id="kode" class="kode py-10">
+      <div class="container m-auto">
+        <h1 class="text-7xl text-white font-mont font-bold text-center mb-10">Kodene Dishare</h1>
+        <h3 class="text-2xl font-mont font-medium text-center text-gray-400 mb-10">Tenang wae TakonWae ini proyek open source Sampean pengen delok kodene monggoh</h3>
+        <a href="#" class="bg-gray-900 w-44 h-10 text-white font-bold py-2 px-4 rounded flex items-center m-auto shadow-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4 mr-2">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+          Delok Kodene
+        </a>
+      </div>
+    </section>
+    <!-- kode section end -->
+
+    <!-- footer start -->
+    <footer class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto pt-36">
+      <!-- Grid -->
+      <div class="text-center">
+        <div>
+          <a class="flex-none text-xl font-semibold text-black dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#" aria-label="Brand">Rizkirmdhn</a>
+        </div>
+        <!-- End Col -->
+
+        <div class="mt-3">
+          <p class="text-gray-500">bolone <a class="font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-400" href="#">Rizkirmdhn</a> lan liane.</p>
+          <p class="text-gray-500">© Rizkirmdhn. Sejak 2024 . All rights reserved.</p>
+        </div>
+
+        <!-- logo social -->
+        <div class="mt-3 space-x-2">
+          <a
+            class="inline-flex justify-center items-center size-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+            href="#"
+          >
+            <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"
+              />
+            </svg>
+          </a>
+          <a
+            class="inline-flex justify-center items-center size-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+            href="#"
+          >
+            <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+              />
+            </svg>
+          </a>
+          <a
+            class="inline-flex justify-center items-center size-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+            href="#"
+          >
+            <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+        </div>
+        <!-- End Social Brands -->
+      </div>
+      <!-- End Grid -->
+    </footer>
+    <!-- footer end -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
